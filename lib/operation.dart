@@ -3,6 +3,6 @@ abstract class Operation {
   double subtraction();
   double multiplied();
   double division();
-  double heighestCommonFactor();
+  double highestCommonFactor();
   double lowestCommonMultiple();
 }

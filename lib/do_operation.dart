@@ -7,36 +7,24 @@ class DoOperation implements Operation {
   DoOperation(this.dataNumber);
 
   @override
-  double addition() {
-    return dataNumber.a + dataNumber.b;
-  }
+  double addition() => dataNumber.a + dataNumber.b;
 
   @override
-  double subtraction() {
-    return dataNumber.a - dataNumber.b;
-  }
+  double subtraction() => dataNumber.a - dataNumber.b;
 
   @override
-  double multiplied() {
-    return dataNumber.a * dataNumber.b;
-  }
+  double multiplied() => dataNumber.a * dataNumber.b;
 
   @override
-  double division() {
-    return dataNumber.a / dataNumber.b;
-  }
+  double division() => dataNumber.a / dataNumber.b;
 
   @override
-  double heighestCommonFactor() {
-    return findHCF(dataNumber.a, dataNumber.b);
-  }
+  double highestCommonFactor() => _findHCF(dataNumber.a, dataNumber.b);
 
   @override
-  double lowestCommonMultiple() {
-    return findLCM(dataNumber.a, dataNumber.b);
-  }
+  double lowestCommonMultiple() => _findLCM(dataNumber.a, dataNumber.b);
 
-  double findHCF(double a, double b) {
+  double _findHCF(double a, double b) {
     if (a == 0) {
       return b;
     }
@@ -47,12 +35,12 @@ class DoOperation implements Operation {
       return a;
     }
     if (a > b) {
-      return findHCF(a - b, b);
+      return _findHCF(a - b, b);
     }
-    return findHCF(a, b - a);
+    return _findHCF(a, b - a);
   }
 
-  double findLCM(double a, double b) {
-    return (a / findHCF(a, b)) * b;
+  double _findLCM(double a, double b) {
+    return (a / _findHCF(a, b)) * b;
   }
 }
