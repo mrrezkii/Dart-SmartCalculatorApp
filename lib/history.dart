@@ -1,5 +1,3 @@
-import 'package:smart_calculator/do_operation.dart';
-
 class History {
   final List number;
   final String operator;
