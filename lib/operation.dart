@@ -7,6 +7,6 @@ abstract class Operation {
   double subtraction();
   double multiplied();
   double division();
-  int heighestCommonFactor();
-  int lowestCommonMultiple();
+  double heighestCommonFactor();
+  double lowestCommonMultiple();
 }
