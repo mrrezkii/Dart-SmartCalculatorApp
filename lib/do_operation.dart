@@ -1,7 +1,5 @@
-import 'dart:io';
-
-import 'package:smart_calculator/data_number.dart';
-import 'package:smart_calculator/operation.dart';
+import 'data_number.dart';
+import 'operation.dart';
 
 class DoOperation implements Operation {
   final DataNumber dataNumber;

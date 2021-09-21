@@ -1,5 +1,5 @@
-import 'package:smart_calculator/do_operation.dart';
-import 'package:smart_calculator/data_number.dart';
+import '../lib/do_operation.dart';
+import '../lib/data_number.dart';
 
 void main(List<String> arguments) {
   var operation = DoOperation(DataNumber(15, 25));
