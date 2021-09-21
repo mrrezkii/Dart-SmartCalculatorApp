@@ -1,6 +1,6 @@
 class DataNumber {
-  int a;
-  int b;
+  double a;
+  double b;
 
   DataNumber(this.a, this.b);
 }
